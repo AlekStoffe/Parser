@@ -1,5 +1,13 @@
-# Parser
+# Auto_ru
 
-Car parser from auto.ru in Python
+Программа собирает объявления о продаже автомобилей BMW в интернете
 
-Libraries used: requests - requests.readthedocs.io BeautifulSoup - wiki.python.su csv - docs.python.org json - docs.python.org Information is output to csv file
+## Как установить
+
+Установите Python пакеты из `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+Результаты парсинга сохранятся в `*.json` файлы внутри каталога `data`. При повторном запуске парсер добавит новые данные в конец файла и этим сломает JSON, поэтому старые файлы с данными лучше удалять перед повторным запуском.
